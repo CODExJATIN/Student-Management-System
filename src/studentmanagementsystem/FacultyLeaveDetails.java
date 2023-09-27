@@ -1,34 +1,35 @@
-package student.management.system;
+package studentmanagementsystem;
+
 import javax.swing.*;
 import java.awt.*;
 import java.sql.*;
 import net.proteanit.sql.DbUtils;
 import java.awt.event.*;
 
-public class StudentLeaveDetails extends JFrame implements ActionListener {
+public class FacultyLeaveDetails extends JFrame implements ActionListener {
 
-    Choice crollno;
+    Choice cEmpId;
     JTable table;
-    JButton search, print, update, add, cancel;
+    JButton search, print, cancel;
 
-    StudentLeaveDetails() {
+    FacultyLeaveDetails() {
 
-        getContentPane().setBackground(Color.WHITE);
+        getContentPane().setBackground(Color.LIGHT_GRAY);
         setLayout(null);
 
-        JLabel heading = new JLabel("Search by Roll Number");
+        JLabel heading = new JLabel("Search by Employee Id");
         heading.setBounds(20, 20, 150, 20);
         add(heading);
 
-        crollno = new Choice();
-        crollno.setBounds(180, 20, 150, 20);
-        add(crollno);
+        cEmpId = new Choice();
+        cEmpId.setBounds(180, 20, 150, 20);
+        add(cEmpId);
 
         try {
             Conn c = new Conn();
-            ResultSet rs = c.S.executeQuery("select * from student");
+            ResultSet rs = c.S.executeQuery("select * from teacher");
             while(rs.next()) {
-                crollno.add(rs.getString("rollno"));
+                cEmpId.add(rs.getString("empid"));
             }
         } catch (Exception e) {
             e.printStackTrace();
@@ -38,7 +39,7 @@ public class StudentLeaveDetails extends JFrame implements ActionListener {
 
         try {
             Conn c = new Conn();
-            ResultSet rs = c.S.executeQuery("select * from studentleave");
+            ResultSet rs = c.S.executeQuery("select * from teacherleave");
             table.setModel(DbUtils.resultSetToTableModel(rs));
         } catch (Exception e) {
             e.printStackTrace();
@@ -70,7 +71,7 @@ public class StudentLeaveDetails extends JFrame implements ActionListener {
 
     public void actionPerformed(ActionEvent ae) {
         if (ae.getSource() == search) {
-            String query = "select * from studentleave where rollno = '"+crollno.getSelectedItem()+"'";
+            String query = "select * from teacherleave where rollno = '"+cEmpId.getSelectedItem()+"'";
             try {
                 Conn c = new Conn();
                 ResultSet rs = c.S.executeQuery(query);
@@ -90,6 +91,6 @@ public class StudentLeaveDetails extends JFrame implements ActionListener {
     }
 
     public static void main(String[] args) {
-        new StudentLeaveDetails();
+        new FacultyLeaveDetails();
     }
 }

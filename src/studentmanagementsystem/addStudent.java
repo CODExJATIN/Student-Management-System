@@ -1,4 +1,4 @@
-package student.management.system;
+package studentmanagementsystem;
 
 import java.awt.*;
 
@@ -7,7 +7,6 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import  java.util.*;
 import com.toedter.calendar.JDateChooser;
-import java.sql.*;
 
 public class addStudent extends JFrame implements ActionListener {
 

@@ -1,4 +1,4 @@
-package student.management.system;
+package studentmanagementsystem;
 
 import javax.swing.*;
 import java.awt.*;
@@ -6,13 +6,13 @@ import java.sql.*;
 import com.toedter.calendar.JDateChooser;
 import java.awt.event.*;
 
-public class FacultyLeave extends JFrame implements ActionListener {
+public class StudentLeave extends JFrame implements ActionListener {
 
-    Choice cEmpId, ctime;
+    Choice crollno, ctime;
     JDateChooser dcdate;
     JButton submit, cancel;
 
-    FacultyLeave() {
+    StudentLeave() {
 
         setSize(500, 550);
         setLocation(550, 100);
@@ -20,25 +20,25 @@ public class FacultyLeave extends JFrame implements ActionListener {
 
         getContentPane().setBackground(Color.LIGHT_GRAY);
 
-        JLabel heading = new JLabel("Apply Leave (Faculty)");
+        JLabel heading = new JLabel("Apply Leave (Student)");
         heading.setBounds(40, 50, 300, 30);
         heading.setFont(new Font("Tahoma", Font.BOLD, 20));
         add(heading);
 
-        JLabel lblrollno = new JLabel("Search by Employee Id");
+        JLabel lblrollno = new JLabel("Search by Roll Number");
         lblrollno.setBounds(60, 100, 200, 20);
         lblrollno.setFont(new Font("Tahoma", Font.PLAIN, 18));
         add(lblrollno);
 
-        cEmpId = new Choice();
-        cEmpId.setBounds(60, 130, 200, 20);
-        add(cEmpId);
+        crollno = new Choice();
+        crollno.setBounds(60, 130, 200, 20);
+        add(crollno);
 
         try {
             Conn c = new Conn();
-            ResultSet rs = c.S.executeQuery("select * from teacher");
+            ResultSet rs = c.S.executeQuery("select * from student");
             while(rs.next()) {
-                cEmpId.add(rs.getString("empId"));
+                crollno.add(rs.getString("rollno"));
             }
         } catch (Exception e) {
             e.printStackTrace();
@@ -85,11 +85,11 @@ public class FacultyLeave extends JFrame implements ActionListener {
 
     public void actionPerformed(ActionEvent ae) {
         if (ae.getSource() == submit) {
-            String rollno = cEmpId.getSelectedItem();
+            String rollno = crollno.getSelectedItem();
             String date = ((JTextField) dcdate.getDateEditor().getUiComponent()).getText();
             String duration = ctime.getSelectedItem();
 
-            String query = "insert into teacherleave values('"+rollno+"', '"+date+"', '"+duration+"')";
+            String query = "insert into studentleave values('"+rollno+"', '"+date+"', '"+duration+"')";
 
             try {
                 Conn c = new Conn();
@@ -105,6 +105,6 @@ public class FacultyLeave extends JFrame implements ActionListener {
     }
 
     public static void main(String[] args) {
-        new FacultyLeave();
+        new StudentLeave();
     }
 }
