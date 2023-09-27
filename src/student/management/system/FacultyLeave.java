@@ -18,9 +18,9 @@ public class FacultyLeave extends JFrame implements ActionListener {
         setLocation(550, 100);
         setLayout(null);
 
-        getContentPane().setBackground(Color.WHITE);
+        getContentPane().setBackground(Color.LIGHT_GRAY);
 
-        JLabel heading = new JLabel("Apply Leave (Teacher)");
+        JLabel heading = new JLabel("Apply Leave (Faculty)");
         heading.setBounds(40, 50, 300, 30);
         heading.setFont(new Font("Tahoma", Font.BOLD, 20));
         add(heading);

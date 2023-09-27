@@ -14,7 +14,7 @@ public class FacultyLeaveDetails extends JFrame implements ActionListener {
 
     FacultyLeaveDetails() {
 
-        getContentPane().setBackground(Color.WHITE);
+        getContentPane().setBackground(Color.LIGHT_GRAY);
         setLayout(null);
 
         JLabel heading = new JLabel("Search by Employee Id");

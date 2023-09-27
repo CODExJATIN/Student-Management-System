@@ -54,7 +54,7 @@ public class addStudent extends JFrame implements ActionListener {
         lblrollno.setFont(new Font("serif", Font.BOLD, 20));
         add(lblrollno);
 
-        labelrollno = new JLabel("1533"+first4);
+        labelrollno = new JLabel("22016"+first4);
         labelrollno.setBounds(200, 200, 200, 30);
         labelrollno.setFont(new Font("serif", Font.BOLD, 20));
         add(labelrollno);

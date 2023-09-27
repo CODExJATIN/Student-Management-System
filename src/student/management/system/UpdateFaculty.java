@@ -19,7 +19,7 @@ public class UpdateFaculty extends JFrame implements ActionListener{
 
         setLayout(null);
 
-        JLabel heading = new JLabel("Update Teacher Details");
+        JLabel heading = new JLabel("Update Faculty Details");
         heading.setBounds(50, 10, 500, 50);
         heading.setFont(new Font("Tahoma", Font.ITALIC, 35));
         add(heading);
@@ -239,7 +239,7 @@ public class UpdateFaculty extends JFrame implements ActionListener{
                 Conn con = new Conn();
                 con.S.executeUpdate(query);
 
-                JOptionPane.showMessageDialog(null, "Student Details Updated Successfully");
+                JOptionPane.showMessageDialog(null, "Faculty Details Updated Successfully");
                 setVisible(false);
             } catch (Exception e) {
                 e.printStackTrace();

@@ -20,7 +20,7 @@ public class EnterMarks extends JFrame implements ActionListener {
         setSize(1000,500);
         setLocation(300,150);
         setLayout(null);
-        getContentPane().setBackground(Color.WHITE);
+        getContentPane().setBackground(Color.LIGHT_GRAY);
 
         ImageIcon i1 = new ImageIcon(ClassLoader.getSystemResource("icons/exam.jpg"));
         Image i2 = i1.getImage().getScaledInstance(400,300, Image.SCALE_DEFAULT);

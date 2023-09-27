@@ -17,7 +17,7 @@ public class ExaminationDetails extends JFrame implements ActionListener {
         setLocation(300, 100);
         setLayout(null);
 
-        getContentPane().setBackground(Color.WHITE);
+        getContentPane().setBackground(Color.LIGHT_GRAY);
 
         JLabel heading = new JLabel("Check Result");
         heading.setBounds(80, 15, 400, 50);

@@ -11,7 +11,7 @@ public class FeeStructure extends JFrame {
         setLocation(250, 50);
         setLayout(null);
 
-        getContentPane().setBackground(Color.WHITE);
+        getContentPane().setBackground(Color.LIGHT_GRAY);
 
         JLabel heading = new JLabel("Fee Structure");
         heading.setBounds(50, 10, 400, 30);
