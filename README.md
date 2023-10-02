@@ -5,61 +5,63 @@ A comprehensive Student Management System designed to streamline administrative 
 ## Features
 
 - **Login Screen:** Secure login for administrators and students.
-- **Student Details Form:** Easily manage and update student information.
-- **Apply for Leave:** Students can request leave online, and administrators can approve or reject requests.
+- **Student Details Form:** Add new student information.
+- **Apply for Leave:** Students and Faculty can request leave online.
 - **Check Student Details:** View detailed information about students.
 - **Check Leave Details:** Track leave records for students.
 - **Enter Marks:** Input and manage student examination scores.
 - **See Result:** Generate and view student results.
-- **Check Fees Structure:** Access information about fees and payment schedules.
+- **Check Fees Structure:** Access information about fees.
 - **Pay Fees:** Convenient online fee payment functionality.
 - **Utilities (Notepad & Calculator):** Additional tools for convenience.
-- **About Page:** Learn more about the Student Management System.
+- **About Page:** About the Student Management System.
 
 ## Screenshots
 
 Here are some screenshots from the Student Management System:
 
+### About Page
+
+![About Page](https://i.ibb.co/jkSywZw/about.jpg)
+
 ### Login Screen
 
-![Login Screen](screenshots/login.jpg)
+![Login Screen](https://i.ibb.co/ScYwVpZ/login.jpg)
 
 ### Student Details Form
 
-![Student Details Form](screenshots/studentdetails.jpg)
+![Student Details Form](https://i.ibb.co/606xDpT/studentdetails.jpg)
 
 ### Apply for Leave
 
-![Apply for Leave](screenshots/applyleave.jpg)
+![Apply for Leave](https://i.ibb.co/NKYzGGJ/applyleave.jpg)
 
 ### Check Student Details
 
-![Check Student Details](screenshots/checkstudent.jpg)
+![Check Student Details](https://i.ibb.co/XzbyP4F/SAVE-20231002-132615.jpg)
 
 ### Check Leave Details
 
-![Check Leave Details](screenshots/checkleave.jpg)
+![Check Leave Details](https://i.ibb.co/vw2pjrD/SAVE-20231002-132640.jpg)
 
 ### Enter Marks
 
-![Enter Marks](screenshots/entermarks.jpg)
+![Enter Marks](https://i.ibb.co/YTdCK7H/entermarks.jpg)
 
 ### See Result
 
-![See Result](screenshots/seeresult.jpg)
+![See Result](https://i.ibb.co/qBZyt63/seeresult.jpg)
 
 ### Check Fees Structure
 
-![Check Fees Structure](screenshots/checkfees.jpg)
+![Check Fees Structure](https://i.ibb.co/dgV1CkH/check-fees.jpg)
 
 ### Pay Fees
 
-![Pay Fees](screenshots/payfees.jpg)
+![Pay Fees](https://i.ibb.co/Z1vk4b2/payfees.jpg)
 
 ### Utilities (Notepad & Calculator)
 
-![Utilities](screenshots/utilities.jpg)
+![Utilities](https://i.ibb.co/wJTKVSC/utilities.jpg)
 
-### About Page
 
-![About Page](screenshots/about.jpg)
