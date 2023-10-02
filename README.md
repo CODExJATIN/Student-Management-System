@@ -22,44 +22,44 @@ Here are some screenshots from the Student Management System:
 
 ### Login Screen
 
-![Login Screen](screenshots/login.png)
+![Login Screen](screenshots/login.jpg)
 
 ### Student Details Form
 
-![Student Details Form](screenshots/student_details.png)
+![Student Details Form](screenshots/student_details.jpg)
 
 ### Apply for Leave
 
-![Apply for Leave](screenshots/apply_leave.png)
+![Apply for Leave](screenshots/apply_leave.jpg)
 
 ### Check Student Details
 
-![Check Student Details](screenshots/check_student.png)
+![Check Student Details](screenshots/check_student.jpg)
 
 ### Check Leave Details
 
-![Check Leave Details](screenshots/check_leave.png)
+![Check Leave Details](screenshots/check_leave.jpg)
 
 ### Enter Marks
 
-![Enter Marks](screenshots/enter_marks.png)
+![Enter Marks](screenshots/enter_marks.jpg)
 
 ### See Result
 
-![See Result](screenshots/see_result.png)
+![See Result](screenshots/see_result.jpg)
 
 ### Check Fees Structure
 
-![Check Fees Structure](screenshots/check_fees.png)
+![Check Fees Structure](screenshots/check_fees.jpg)
 
 ### Pay Fees
 
-![Pay Fees](screenshots/pay_fees.png)
+![Pay Fees](screenshots/pay_fees.jpg)
 
 ### Utilities (Notepad & Calculator)
 
-![Utilities](screenshots/utilities.png)
+![Utilities](screenshots/utilities.jpg)
 
 ### About Page
 
-![About Page](screenshots/about.png)
+![About Page](screenshots/about.jpg)
